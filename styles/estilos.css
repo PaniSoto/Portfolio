@@ -1,0 +1,254 @@
+@font-face {
+  font-family: 'Lora';
+  src: url('/assets/fuentes/Lora-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url('/assets/fuentes/Pacifico-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/assets/fuentes/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+}
+
+body {
+    background-color: #b6b6db; 
+    color: #fff; /* Color del texto */
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+  background-color: #191c29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  position: absolute;
+}
+
+.header_escritorio {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  color: white;
+}
+
+.enlaces {
+  color: white;
+  text-decoration: none;
+}
+
+.enlaces:hover {
+  color: #dba72e;
+  transition: color 0.8s;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50px;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 10px #dba72e);
+  transition: filter 0.8s;
+}
+
+.header_derecha{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+label{
+  position: absolute;
+  left: 100px;
+  color: white;
+}
+
+
+
+  /*pruebas */
+
+.configuracionTarjetas {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  width: 300px;
+  height: 500px;
+  perspective: 900px;
+}
+
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+
+#posicion {
+  background: linear-gradient(to bottom, #db0f2e 30%, #d4cc2d 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 100%;
+  z-index: 0;
+}
+
+#posicion_gecko {
+  left: -100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #6be203 30%, #32c64f 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+}
+
+span {
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.texto_colibri {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  height: 55%;
+  width: 100%;
+  background: linear-gradient(to bottom, #5b71eb 0%, #1c8fe7 40%);
+  z-index: 30;
+}
+
+.imagen_colibri{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: 30;
+}
+
+.imagen_toro{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: 30;
+}
+
+.imagen_gecko{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: 30;
+}
+
+.info {
+  position: absolute;
+  top: 55%;
+}
+
+.info_colibri {
+  position: absolute;
+  top: 20%;
+}
+
+h3 {
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+h4 {
+  color: #111;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  letter-spacing: 2px;
+}
+
+h1 {
+  color: #111;
+  position: fixed;
+  top: 0%;
+  left: 30%;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 14px;
+  color: #fff;
+  padding: 0px 20px 20px 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.titulo_prueba {
+  font-family: 'Pacifico', serif;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 50px;
+  
+}
+
+.parrafo_prueba{
+  font-family: 'Lora', serif;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: underline;
+  font-size: 15px;
+}
